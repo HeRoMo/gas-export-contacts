@@ -1,0 +1,7 @@
+node_modules
+tmp
+.env
+.envrc
+
+.clasp.json
+*.log
