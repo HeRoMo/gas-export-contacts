@@ -21,10 +21,11 @@ function formatContacts(contacts: GoogleAppsScript.People.Schema.Person[]) {
       homeAddress.postalCode,
       homeAddress.region,
       homeAddress.streetAddress,
+      homeAddress.extendedAddress,
       spouse?.person || '',
     ];
   });
-  const header = ['姓', '名', '姓かな', '名かな', '自宅〒', '自宅住所1', '自宅住所2', '連名1'];
+  const header = ['姓', '名', '姓かな', '名かな', '自宅〒', '自宅住所1', '自宅住所2', '自宅住所3', '連名1'];
   contactValues.splice(0, 0, header);
   return contactValues;
 }
